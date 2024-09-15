@@ -1,12 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar > 
-    <div slot="end" class="profile-header">
-      <img src="assets/image/0.jpg" alt="Profile Picture" />
-      <div class="h6">{{ userName }}</div>
-      <!-- <p class="h6">{{ userDescription }}</p> -->
-</div>
-</ion-toolbar>
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title slot="start">AgroTamta</ion-title>
+    <ion-avatar slot="start" class="bg-white">
+      <!-- <img src="assets/image/logomain.png" alt="AgroTamta Logo" /> -->
+      <img src="assets/image/iconn.gif" sizes="large" alt="AgroTamta Logo"/>
+    </ion-avatar>
+    <ion-avatar slot="end">
+      <img src="assets/image/img.gif" sizes="small" [routerLink]="['/tabs/settings']" />
+    </ion-avatar>
+  </ion-toolbar>
 </ion-header>
+
+
 
 <!--  -->
 <ion-content  class="ion-margin">

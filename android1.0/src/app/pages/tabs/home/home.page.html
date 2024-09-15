@@ -1,28 +1,30 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar color="primary">
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title slot="start">AgroTamta</ion-title>
+    <ion-avatar slot="start" class="bg-white">
+      <!-- <img src="assets/image/logomain.png" alt="AgroTamta Logo" /> -->
+      <img src="assets/image/iconn.gif" sizes="large" alt="AgroTamta Logo"/>
+    </ion-avatar>
     <ion-avatar slot="end">
-      <img src="assets/image/img.gif" sizes="small"  [routerLink]="['/tabs/settings']" />
+      <img src="assets/image/img.gif" sizes="small" [routerLink]="['/tabs/settings']" />
     </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="primary">
-
-  <ion-title style="text-align: center;" class="ion-margin">    Welcome To AgroTamta </ion-title>
+  <ion-title style="text-align: center;" class="ion-margin card text-dark">Welcome To AgroTamta</ion-title>
   <!-- 3 -->
-  <div class="im">
-    <img  src="assets/image/iconn.gif" sizes="small" class="img"/>
-   
+  <div class="im" style="text-align: center;">
+    
+    <img src="assets/image/looney-13.png" sizes="small" />
+    <!-- <img src="assets/image/iconn.gif" sizes="small" class="img1"/> -->
+    <ion-icon name="arrow-forward-circle-sharp" size="large" [routerLink]="['/tabs/transactions']" slot="end"></ion-icon>
+  </div>
 
-    <img src="assets/image/looney-13.png" sizes="large" />
-    <img  src="assets/image/iconn.gif" sizes="small" class="img1"/>
-    <ion-icon name="arrow-forward-circle-sharp" size="large" [routerLink]="['/tabs/transactions']"> </ion-icon>
-</div>
-
-<div class="img3">
-<img src="assets/home.jpg"   />
-<img src="assets/home1.jpg"  />
-</div>
+  <div class="img3" style="text-align: center;">
+    <img src="assets/home.jpg"  sizes="small"  />
+    <img src="assets/home1.jpg" sizes="small"  />
+  </div>
 </ion-content>
  
 
