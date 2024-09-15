@@ -1,0 +1,7 @@
+{
+  "name": "meshbillgenerator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

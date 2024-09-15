@@ -1,0 +1,49 @@
+<div class="container">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+  <!--  -->
+  <!-- folder link -->
+  <ion-breadcrumbs>
+    <ion-breadcrumb [routerLink]="['/tabs/home']">
+      <ion-icon slot="start" name="home"></ion-icon>
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb [routerLink]="['/billcalculation']">
+      <ion-icon slot="start" name="flash"></ion-icon>
+      Bill
+    </ion-breadcrumb>
+    <ion-breadcrumb [routerLink]="['/tabs/card']">
+      <ion-icon slot="start" name="menu"></ion-icon>
+      About Hostel
+    </ion-breadcrumb>
+    <ion-breadcrumb [routerLink]="['/tabs/settings']">
+      <ion-icon slot="start" name="film"></ion-icon>
+      Profile
+    </ion-breadcrumb>
+    <ion-breadcrumb [routerLink]="['/studentlist']">
+      <ion-icon slot="start" name="film"></ion-icon>
+      Student List
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  
+  <!-- folder link -->
+      <ion-avatar slot="end">
+        <!-- <img src="assets/image/plus.png" sizes="large"  /> -->
+       </ion-avatar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true" slot="end" >
+   
+  
+    <div class="ion-padding">
+      <h1 class="ion-text-center">Hostel Staff</h1>
+      <!-- <img src="assets/imgh/1.jpg" sizes="large"  /> -->
+  
+      <h1 class="ion-text-center">Facilities</h1>
+      <!-- <img src="assets/imgh/2.jpg" sizes="large"  /> -->
+
+    </div>
+  
+    <!-- about -->
+  </ion-content>
+</div>

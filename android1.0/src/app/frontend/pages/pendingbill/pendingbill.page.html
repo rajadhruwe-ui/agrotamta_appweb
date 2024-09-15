@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Grid View
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <ion-grid >
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of items">
+        <ion-card>
+          <!-- Your item content goes here -->
+          <ion-card-header>
+            <ion-card-title >{{ item.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{ item.description }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

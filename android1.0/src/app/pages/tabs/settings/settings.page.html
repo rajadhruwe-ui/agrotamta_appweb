@@ -1,0 +1,124 @@
+<ion-header [translucent]="true">
+  <ion-toolbar > 
+    <div slot="end" class="profile-header">
+      <img src="assets/image/0.jpg" alt="Profile Picture" />
+      <div class="h6">{{ userName }}</div>
+      <!-- <p class="h6">{{ userDescription }}</p> -->
+</div>
+</ion-toolbar>
+</ion-header>
+
+<!--  -->
+<ion-content  class="ion-margin">
+  <ion-card>
+    <!-- <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" /> -->
+    <!-- <img src="assets/image/tap.png" sizes="small"  /> -->
+    <ion-card-header>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Profile Information
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <!-- Add your profile information here -->
+          <ion-item>
+            <ion-label>Name</ion-label>
+            <ion-input [(ngModel)]="userName" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input [(ngModel)]="userEmail" type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Description</ion-label>
+            <ion-input [(ngModel)]="userDescription" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Session</ion-label>
+            <ion-input [(ngModel)]="sesstion" type="text"></ion-input>
+          </ion-item>
+          <!-- You can add more fields as needed -->
+      
+          <ion-button expand="full" (click)="updateProfile()">Update Profile</ion-button>
+        </ion-card-content>
+      </ion-card>
+      
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more,
+      nothing less.
+    </ion-card-content>
+    
+  </ion-card>
+  <!--  -->
+
+
+
+  <!--  -->
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-activatable ripple-parent circle">
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+
+      </ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+<!--  -->
+
+<!-- <b>Column 1 has <code>size</code> set to <code>"auto"</code></b>
+<ion-grid>
+  <ion-row>
+    <ion-col size="auto">1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col>3</ion-col>
+  </ion-row>
+</ion-grid>
+
+<b>Column 3 contains an input and has <code>size</code> set to <code>"auto"</code></b>
+<ion-grid>
+  <ion-row>
+    <ion-col>1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col size="auto">
+      <ion-input placeholder="3"></ion-input>
+    </ion-col>
+    <ion-col>4</ion-col>
+    <ion-col>5</ion-col>
+    <ion-col>6</ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- <b>Column 2 has <code>size</code> set to <code>"auto"</code> and a defined width</b>
+<ion-grid>
+  <ion-row>
+    <ion-col>1</ion-col>
+    <ion-col size="auto">
+      <div style="width: 150px">2</div>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+<!--  -->
+<!-- </ion-content> -->
